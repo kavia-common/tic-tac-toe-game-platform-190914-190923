@@ -10,6 +10,16 @@
   --button-text: #ffffff;
 }
 
+/* App-specific palette alignment with task theme */
+:root {
+  --ttt-primary: #3b82f6;
+  --ttt-success: #06b6d4;
+  --ttt-bg: #f9fafb;
+  --ttt-surface: #ffffff;
+  --ttt-text: #111827;
+  --ttt-border: #e5e7eb;
+}
+
 [data-theme="dark"] {
   /* Dark theme colors */
   --bg-primary: #1a1a1a;
@@ -101,4 +111,26 @@
     padding: 8px 16px;
     font-size: 12px;
   }
+}
+
+/* Minimal helpers for game layout (non-intrusive) */
+.ttt-container {
+  background: var(--ttt-bg);
+}
+
+.ttt-card {
+  background: var(--ttt-surface);
+  color: var(--ttt-text);
+  border: 1px solid var(--ttt-border);
+  border-radius: 16px;
+}
+
+.btn-primary {
+  background: var(--ttt-primary);
+  color: #fff;
+  border: 1px solid var(--ttt-primary);
+}
+
+.text-success {
+  color: var(--ttt-success);
 }
